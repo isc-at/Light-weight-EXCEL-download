@@ -11,7 +11,7 @@ do ##class(SYS.Container).QuiesceForBundling()
 Do ##class(Security.Users).UnExpireUserPasswords("*")
 zn "IRISAPP"
 zpm "install webterminal"
-halt
+halt 
 EOF
 
 exit=$?
