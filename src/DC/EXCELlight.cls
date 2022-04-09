@@ -47,7 +47,7 @@ ClassMethod toFile(filename As %String) As %Status
 	else   quit $system.Status.Error(5005,filename)
 	use filename
 	set sc=..OnPage()
-	close file
+	close filename
 	quit sc 
 }
 
