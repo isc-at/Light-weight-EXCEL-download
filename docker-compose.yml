@@ -4,7 +4,7 @@ services:
     build: 
       context: .
       dockerfile: Dockerfile
-     restart: always
+    restart: always
     command: --check-caps false --ISCAgent false
     ports:
       - 41773:1972
