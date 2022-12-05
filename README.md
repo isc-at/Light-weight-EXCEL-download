@@ -36,10 +36,3 @@ Rather small size of code with simple structure
 Now you will understand why I titled it "Light Weight"  
 
 [Article in DC](https://community.intersystems.com/post/light-weight-excel-download)
-
-[Demo Server SMP](https://excel-light.demo.community.intersystems.com/csp/sys/UtilHome.csp)   
-[Demo Server WebTerminal](https://excel-light.demo.community.intersystems.com/terminal/)    
-        
-**Code Quality**    
-<img width="85%" src="https://openexchange.intersystems.com/mp/img/packages/827/screenshots/ffmweh4lgwdrfo3jzlktssar0q4.jpg">
-   
