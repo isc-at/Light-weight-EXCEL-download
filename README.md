@@ -1,4 +1,5 @@
-<div align="right"><h3>*** archived ***</h3></div>The full story is available on [DeveloperCommunity](https://community.intersystems.com/post/light-weight-excel-download)
+<div align="right"><h3>*** archived ***</h3></div>   
+The full story is available on [DeveloperCommunity](https://community.intersystems.com/post/light-weight-excel-download)    
 But here's the light weight export to EXCEL.
 
 Good old CSP is well equipped to produce HTML tables accepted from EXCEL as input.  
