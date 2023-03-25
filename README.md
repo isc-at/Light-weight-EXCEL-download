@@ -1,4 +1,4 @@
-<div align="right"><h3>*** archived ***</h3></div>
+<p align="right"><img src="https://github.com/isc-at/CPIPE/blob/master/archived.jpg"/></p>
 
 Good old CSP is well equipped to produce HTML tables accepted from EXCEL as input.  
 With modern Browsers you don't even need <head> and  <body> tags.  
