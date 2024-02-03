@@ -1,16 +1,14 @@
-<p align="right"><img src="https://github.com/isc-at/CPIPE/blob/master/archived.jpg"/></p>
-
 Good old CSP is well equipped to produce HTML tables accepted from EXCEL as input.  
 With modern Browsers you don't even need <head> and  <body> tags.  
 So the required code around your SQL result set is really slim.  
 And you are free to add any formatting you need either by HTML or in SQL.  
 
 The final trick to move your table from browser to EXCEL:  
-In the method OnPreHTTP inherited from %CSP.Page you  
+In the method, OnPreHTTP inherited from %CSP.Page you  
 set %response.ContentType="application/vnd.ms-excel"  
 
 Now when you call the class with your browser you get asked to open or to save it.   
-Next , because the extenison is .cls you get asked for the program to open it.  
+Next, because the extension is .cls you get asked for the program to open it.  
 like this: 
 - ![](https://openexchange.intersystems.com/mp/img/packages/827/screenshots/4u4gejtzxfceqa55qerjca1kjzk.jpg)
 
