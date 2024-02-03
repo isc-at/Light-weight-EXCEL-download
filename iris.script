@@ -1,0 +1,11 @@
+    zn "%SYS"
+
+    // Unexpire passwords and set up passwordless mode to simplify dev use.
+    // ** Comment out these two line for Production use **
+    do ##class(Security.Users).UnExpireUserPasswords("*")
+    zpm "install passwordless"
+
+    zn "USER"
+    zpm "install webterminal"
+    zpm "load /home/irisowner/dev/ -v":1
+    halt
