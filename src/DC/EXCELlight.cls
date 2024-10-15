@@ -20,7 +20,7 @@ ClassMethod OnPreHTTP() As %Boolean [ ServerOnly = 1 ]
 
 ClassMethod OnPage() As %Status
 {
-	set sqlStatement="SELECT TOP 23 ID,Name,%ODBCOUT(DOB) DOB,SSN FROM Sample.Person"
+	set sqlStatement="SELECT TOP 23 ID,Name,%ODBCOUT(DOB) DOB,SSN FROM DC.Person"
 		,query = ##class(%ResultSet).%New()
 		,sc = query.Prepare(sqlStatement)
 	set:sc sc=query.Execute()
@@ -41,14 +41,14 @@ ClassMethod OnPage() As %Status
 }
 
 /// filename should end with ".html"
-ClassMethod toFile(filename As %String) As %Status
+ClassMethod toFile(filename As %String = "DC.EXCEL.html") As %Status
 {
 	open filename:"WNS":1 
 	else   quit $system.Status.Error(5005,filename)
 	use filename
 	set sc=..OnPage()
 	close filename 
-	quit sc 
+	quit sc
 }
 
 }
