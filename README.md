@@ -32,3 +32,41 @@ Rather small size of code with simple structure
 Now you will understand why I titled it "Light Weight"  
 
 [Article in DC](https://community.intersystems.com/post/light-weight-excel-download)
+
+## Test and Demo
+- the screenshots were created when I still used MS EXCEL and MS InternetExplorer on WIN 10
+- the initial design expected a namespace **SAMPLES** (as in Class Docs)
+- for testing in Docker a dedicated demo class is now created
+
+## Docker    
+Container build and start runs ALL installation steps.    
+It is immedeatly ready for use as described    
+
+### Prerequisites
+Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker desktop](https://www.docker.com/products/docker-desktop) installed.
+### Installation
+Clone/git pull the repo into any local directory
+```
+$ git clone https://github.com/rcemper/Light-weight-EXCEL-download.git
+```
+```
+$ docker compose up -d && docker compose logs -f
+````
+### Test
+from the terminal create the demo file by
+```
+USER>write ##class(DC.EXCELlight).toFile()
+```
+see the result by   
+```
+USER>$cat DC.EXCEL.html
+```
+
+Testing in browser depends on the ability of your browser to   
+match with ContentType="application/vnd.ms-excel" otherwise   
+you just get an offer to download the actual page:   
+This may sound obvious. Though ....   
+Feedback to the package shows the need for this clarification.   
+
+This is the link:   
+[http://localhost:42773/csp/user/DC.EXCELlight.cls](http://localhost:42773/csp/user/DC.EXCELlight.cls) 
