@@ -3,12 +3,13 @@
   <Document name="excel-light.ZPM">
     <Module>
       <Name>excel-light</Name>
-      <Version>1.1.0</Version>
+      <Version>1.1.1</Version>
       <Description>Light weight Excel export over CSP</Description>
       <Keywords>CSP, CLS</Keywords>
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
-       <Resource Name="DC.PKG"/>
+       <Resource Name="DC.EXCELlight.CLS"/>
+	   <Resource Name="DC.Person.CLS"/>
     </Module>
   </Document>
 </Export>
