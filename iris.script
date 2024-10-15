@@ -8,4 +8,7 @@
     zn "USER"
     zpm "install webterminal"
     zpm "load /home/irisowner/dev/ -v":1
+    zpm "list"
+    write ##class(DC.Person).Populate(99)
+    	
     halt
